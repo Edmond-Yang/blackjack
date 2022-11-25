@@ -570,6 +570,7 @@ class System {
         this.visible(3);
 
         this.game_div.addClass='blur';
+        this.run_danger_p.visible = 'hidden';
 
         if(this.split == 0){
             this.end_next_btn.visible = 'visible';
