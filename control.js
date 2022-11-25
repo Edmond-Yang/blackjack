@@ -206,7 +206,7 @@ class System {
         this.game_double_btn.addListener('click', function(evt){
             var [system] = evt.currentTarget.myParam;
             system.tool.eventOccur(system.player, '雙倍下注');
-            this.disabled = true;
+            system.game_double_btn.disabled = true;
             system.game_hit_btn.disabled = true;
             system.game_stand_btn.disabled = true;
             system.game_surrender_btn.disabled = true;
