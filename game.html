@@ -1,0 +1,109 @@
+<!--
+    4109056026 楊世宇 期中 11/16
+    4109056026 Edmond Yang 期中 11/16
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlackJack - Game</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Edmond">
+        <meta name="description" content="blackjack game">
+        <link href="./img/spade.png" rel="icon">
+        <link href="./index.css" rel="stylesheet">
+        <link href="./game.css" rel="stylesheet">
+        <script type="text/javascript" src="query.js"></script>
+        <script type="text/javascript" src="poker.js"></script>
+        <script type="text/javascript" src="control.js"></script>
+    </head>
+    <body>
+
+        <!-- start page -->
+        <div id="start">
+            <img src="./img/spade.png" class="start-img">
+            <p class="start-p">BLACKJACK</p>
+            <button class="btn-board" id="start-btn">開始遊戲</button>
+        </div>
+
+        <!-- end page -->
+        <div class="board" id="end">
+            <img src="./img/pokers.png" class="card">
+            <h1 id="end-result"></h1>
+            <div class="row">
+                <img src="./img/chip.webp" width="50px">
+                <p id="end-detail"></p>
+            </div>
+            <button class="btn-board m-top" id="next">下一局</button>
+            <button class="btn-board m-top" id="again">重新開始</button>
+        </div>
+
+        <!-- run page -->
+        
+        <div class="board" id="run">
+            <p id="danger"></p>
+            <img src="./img/pokers.png" class="card">
+            <h1>下注賭金</h1>
+            <div class="row">
+                <img src="./img/chip.webp" width="50px">
+                <p id="chips"></p>
+            </div>
+            <form id="coins">
+            </form>
+            <button class="btn-board" id="check">正常模式</button>
+            <button class="btn-board" id="cheat">作弊模式</button>
+        </div>
+
+        <!-- game page -->
+        <div id="game">
+            <p id="danger"></p>
+            <div class="contain">
+                <div class="tabler-back">
+                    <div class="tabler-border">
+                        <div class="tabler">
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dealer-group" id="dealer">
+
+                </div>
+                <p id="dealer-score"></p>
+    
+                <div class="player-group" id="player">
+    
+                </div>
+                <p id="player-score"></p>
+                <p id="warning"></p>
+                <div class="temp-group" id="temp">
+    
+                </div>
+                <p id="temp-score"></p>
+
+                <button class="hit" id="hit">加牌</button>
+                <button class="stand" id="stand">停牌</button>
+                <button class="split" id="split">分牌</button>
+                <button class="double" id="double">加倍下注</button>
+                <button class="surrender" id="surrender">投降</button>
+                
+            </div>
+            <div class="table-area">
+                <table id="event-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20px;">身分</th>
+                            <th style="width: 40px;">事件</th>
+                        </tr>
+                    </thead>
+                    <tbody class="contain table-field">
+
+                    </tbody>
+                </table>
+            </div>
+            
+            
+        </div>
+        
+    </body>
+</html>

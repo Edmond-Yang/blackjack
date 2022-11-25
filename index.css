@@ -1,0 +1,295 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+    overflow: hidden;
+}
+
+body{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+    background-image: url('./img/background-image.jpg');
+    background-size: cover;
+}
+
+button{
+    z-index: 2;
+}
+
+#start{
+    height: 100%;
+    text-align: center;
+}
+
+.start-img{
+    width: 27%;
+
+    margin-top: -13.5%;
+    margin-left: -13.5%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.start-p{
+    width: 80%;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 20% 0;
+    margin-left: 10%;
+
+    z-index: 2;
+
+
+    font-weight: 600;
+    font-size: 600%;
+
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+#start-btn{
+    width: 100px;
+
+    position: absolute;
+    top: 80%;
+
+    margin-left: -50px;
+    font-size: 20px;
+}
+
+#cheat{
+    margin-left: 25px;
+}
+
+.tabler-back{
+
+    width: 80%;
+    height: 80%;
+    perspective: 400px;
+
+    position: absolute;
+    top: 15%;
+    left: 8%;
+
+    
+}
+
+.tabler-border{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 30px;
+    border: 4px rgb(0, 55, 0) solid;
+
+    background-color: white;
+    
+    transform: rotateX(40deg);
+}
+
+.tabler{
+    width: 99%;
+    height: 140%;
+
+    /* margin: 0.5% 0.5%; */
+    position: relative;
+    top: -15%;
+    left: 0.5%;
+
+    border-radius: 30px;
+    border-width: 0px;
+
+    background-color: rgb(0, 55, 0);
+    
+    transform: rotateX(40deg);
+}
+
+.dealer-group{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+
+    position: absolute;
+    top: 19%;
+    left: 25%;
+}
+
+.dealer{
+    width: 90px;
+    height: 120px;
+}
+
+.dealer-group > div{
+    width: 6%;
+    margin: 0px -3% 0px 0px;
+}
+
+.player-group{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+
+    position: absolute;
+    top: 60%;
+    left: 14%;
+    z-index: 3;
+}
+
+.player, .temp{
+    width: 120px;
+    height: 160px;
+}
+
+
+.player-group > div{
+    width: 5.5%;
+    margin: 0px -0.5% 0px 0px;
+}
+
+.player:hover, .temp:hover{
+    border: orange 2px solid;
+}
+
+.temp-group{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+
+    position: absolute;
+    top: 53%;
+    left: 16%;
+    z-index: 2;
+}
+
+.temp-group > div{
+    width: 5.5%;
+    margin: 0px -0.5% 0px 0px;
+}
+
+.hit, .stand, .split, .double, .surrender{
+    position: absolute;
+    top: 91%;
+    left: 10.5%;
+    width: 10%;
+    height: 7%;
+    background-color: orange;
+    color: white;
+
+    font-size: 18px;
+    font-weight: 550;
+
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+.hit:hover, .stand:hover, .split:hover, .double:hover{
+    background-color: rgb(254, 191, 72);
+}
+
+.stand{
+    left: 22%;
+}
+
+.split{
+    left: 33.5%;
+}
+
+.double{
+    left: 45%;
+}
+
+.surrender{
+    background-color: red;
+    left: 56.5%;
+}
+
+.surrender:hover{
+    background-color: rgb(255, 71, 71);
+}
+
+.disabled{
+    background-color: rgb(212, 212, 212);
+}
+.disabled:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+table{
+    border-spacing: 0;
+    width: 250px;
+}
+
+table thead th:first-child {
+    border-radius: 10px 0 0 0;
+    border: 1px solid orange;
+}
+
+.table-field tr:nth-child(odd) td{
+    background-color: #eee
+}
+
+table thead th:last-child {
+    border-radius: 0 10px 0 0;
+    border-right: 1px solid orange;
+}
+
+table tbody tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+thead{
+    background-color: orange;
+}
+
+th{
+    background-color: orange;
+}
+
+td{
+    background-color: white;
+}
+
+
+#warning{
+    background-color: rgba(255, 0, 0, 0.783);
+    border-radius: 8px;
+    border-width: 0px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+
+    position: absolute;
+    top: 1%;
+    left: 42%;
+
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#end .disabled{
+    color: gray;
+    background-color: transparent;
+    border-color: gray;
+}
+
+#end .disabled:hover{
+    color: gray;
+    background-color: transparent;
+    border-radius: gray;
+}
