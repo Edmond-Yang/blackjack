@@ -492,7 +492,7 @@ class System {
         else if(value == 2)
             var _array = [ 'hidden', 'hidden', 'visible', 'hidden'];
         else   
-            var _array = ['hidden', 'hidden', 'visible' , 'visible'];
+            var _array = ['hidden', 'hidden', 'hidden' , 'visible'];
 
         this.start_div.visible = _array[0];
         this.run_danger_p.visible = 'hidden';
