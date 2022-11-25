@@ -10,8 +10,8 @@ body{
 
 
 .animate{
-    -webkit-animation: appear linear 0.2s 0s 1 alternate;
-    animation: appear linear 0.2s 0s 1 alternate;
+    -webkit-animation: appear linear 0.3s 0s 1 alternate;
+    animation: appear linear 0.3s 0s 1 alternate;
 }
 
 
